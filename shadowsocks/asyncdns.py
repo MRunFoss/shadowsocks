@@ -28,7 +28,7 @@ from shadowsocks import common, lru_cache, eventloop, shell
 
 
 CACHE_SWEEP_INTERVAL = 30
-
+#编译正则表达式，返回RegexObject对象，然后可以通过RegexObject对象调用match()和search()方法。
 VALID_HOSTNAME = re.compile(br"(?!-)[A-Z\d-]{1,63}(?<!-)$", re.IGNORECASE)
 
 common.patch_socket()
